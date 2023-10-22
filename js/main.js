@@ -71,9 +71,10 @@ elformInp.addEventListener("keyup",()=> {
 })
 btn.addEventListener("click",()=> {
      if (elformInp.type === "password") {
-        
-         elformInp.setAttribute("type","text")
+        btn.textContent = "hide";
+         elformInp.setAttribute("type","text");
      }else {
+        btn.textContent = "show";
          elformInp.setAttribute("type","password")
 
      }
