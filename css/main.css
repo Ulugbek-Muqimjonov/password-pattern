@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #090606de;
+}
+.container {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero__wrap {
+    height: 100vh;
+}
+.hero__form {
+    position: relative;
+    gap: 20px;
+    align-items: flex-end;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: 250px;
+    background-color: #09060665;
+    
+}
+.hero__form::before {
+    position: absolute;
+    display: block;
+    top:50px;
+    left: 50%;
+    color: #6a6666ef;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 30px;
+    transform: translateX(-50%);
+    content: "Password";
+}
+.hero__comment {
+    position: absolute;
+    display: block;
+    left: 96px;
+    font-size: 14px;
+    bottom: 24px;
+    font-family: cursive;
+    color: #ffffff35;
+    content: "enter your password";
+}
+.hero__input {
+    padding: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #938700;
+    background-color:#090606dd; ;
+    border: none;
+    outline: none;
+}
+.hero__input::placeholder {
+    color: #ffffff82;
+}
+
+.hero__btn {
+    position: absolute;
+    top: 151px;
+    left: 74%;
+    padding: 9px;
+    border: 1px solid #8385832f;
+    /* border-radius: 10px; */
+    color: #fff;
+    background-color: #1C1919;
+
+    cursor: pointer;
+}
+.hero__line {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #161414;
+}
+.hero__line::before {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transition:0.5s;
+    content: "";
+}
+.hero__weak::before{
+    width: 25%;
+    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00) drop-shadow(0 0 20px #f00);
+    /* background-color:red; */
+}
+.hero__weak-comment {
+    color: #f00;
+    filter: drop-shadow(0 0 5px #f00);
+}
+.hero__medium::before{
+    width: 50%;
+    background-color: #a0e400;
+    filter: drop-shadow(0 0 5px #a0e400) drop-shadow(0 0 10px #a0e400) drop-shadow(0 0 20px #a0e400);
+}
+.hero__medium-comment {
+    color: #a0e400;
+    filter: drop-shadow(0 0 5px #a0e400);
+}
+.hero__strong::before{
+    width: 75%;
+    background-color: #007512;
+    filter: drop-shadow(0 0 5px #007512) drop-shadow(0 0 10px #007512) drop-shadow(0 0 20px #007512);
+}
+.hero__strong-comment {
+    color:#007512;
+    filter: drop-shadow(0 0 5px #007512);
+}
+.hero__stronger::before{
+    width: 100%;    
+    background-color: #00ba1c;
+    filter: drop-shadow(0 0 5px #00ba1c) drop-shadow(0 0 10px #00ba1c) drop-shadow(0 0 20px #00ba1c);
+}
+.hero__stronger-comment {
+    color:#00ba1c;
+    filter: drop-shadow(0 0 5px #00ba1c);
+}
